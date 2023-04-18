@@ -2,59 +2,11 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-{% load static %}
-<link rel="stylesheet" type="text/css" href="{% static '/css/index.css' %}">
-
 </head>
 <body>
-<div class="main-menu">
-<div class="dropdown">
-  <button onclick="Car()" class="dropbtn">Автомашин</button>
-  <div id="Car" class="dropdown-content">
-    <button class="submenu" onclick="autoZ()" value="-avtomashin-zarna" id="autoZ">Автомашин зарна</button>
-    <button class="submenu" onclick="autoT()" value="avto-treesllne" id="autoT">Автомашин түрээслүүлнэ</button>
-    <button class="submenu" onclick="Moto()" value="mototsikl-moped-" id="Moto">Мотоцикл, мопед</button>
-  </div>
-</div>
-<div class="dropdown">
-    <button onclick="Department()" class="dropbtn">Үл хөдлөх</button>
-    <div id="Department" class="dropdown-content">
-      <button class="submenu" onclick="depaz()" value="l-hdlh-zarna" id="depaz">Үл хөдлөх зарна</button>
-      <button class="submenu" onclick="depat()" value="l-hdlh-treesllne" id="depat">Үл хөдлөх түрээслүүлнэ</button>
-    </div>
-  </div>
-  <div class="dropdown">
-    <button onclick="computer()" class="dropbtn">Компьютер сэлбэг хэрэгсэл</button>
-    <div id="computer" class="dropdown-content">
-      <button class="submenu" onclick="comp()" value="desktop" id="comp">Суурин компьютер</button>
-      <button class="submenu" onclick="note()" value="notebook" id="note">Notebook</button>
-      <button class="submenu" onclick="game()" value="psxboxnintendo" id="game">PS, XBox, Nintendo</button>
-      <button class="submenu" onclick="canon()" value="printer-xuvilagch-skanner" id="canon">Принтер, хувилагч, сканнер</button>
-      <button class="submenu" onclick="fix()" value="selbeg" id="fix">Сэлбэг</button>
-      <button class="submenu" onclick="tablet()" value="ipad--tablet" id="tablet">iPad, tablet</button>
-      <button class="submenu" onclick="paper()" value="-printerijn-hor--tsaas" id="paper">Принтерийн хор, бичгийн цаас</button>
-      <button class="submenu" onclick="item()" value="dagaldah" id="item">Дагалдах хэрэгсэл</button>
-    </div>
-  </div>
-  <div class="dropdown">
-    <button onclick="Department()" class="dropbtn">Утас, дугаар</button>
-    <div id="Department" class="dropdown-content">
-      <button class="submenu" onclick="depaz()" value="l-hdlh-zarna" id="depaz">Үл хөдлөх зарна</button>
-      <button class="submenu" onclick="depat()" value="l-hdlh-treesllne" id="depat">Үл хөдлөх түрээслүүлнэ</button>
-    </div>
-  </div>
-  <div class="dropdown">
-    <button onclick="Department()" class="dropbtn">Цахилгаан бараа</button>
-    <div id="Department" class="dropdown-content">
-      <button class="submenu" onclick="depaz()" value="l-hdlh-zarna" id="depaz">Үл хөдлөх зарна</button>
-      <button class="submenu" onclick="depat()" value="l-hdlh-treesllne" id="depat">Үл хөдлөх түрээслүүлнэ</button>
-    </div>
-  </div>
-  </div>
-<p></p>
-<b id="link"></b><a href="/download"><button style="margin-left: 10px;display: none;" id="btn">Татах</button></a>
-
-<script src="{% static 'js/index.js' %}"></script>
+  {% block content %}
+  {% include 'menu.html' %}
+  {% endblock %}
 
 </body>
 </html>

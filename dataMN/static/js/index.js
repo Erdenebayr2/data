@@ -3,11 +3,11 @@ function Car() {
     document.getElementById("Department").classList.remove("show");
     document.getElementById("computer").classList.remove("show");
 }
-    function autoZ() {
-        hom = document.getElementById("autoZ").value;
-        document.getElementById("link").innerHTML = "https://www.unegui.mn/avto-mashin/"+hom+"/"
-        document.getElementById("btn").style.display ="inline-block"
-        }
+    // function autoZ() {
+    //     hom = document.getElementById("autoZ").value;
+    //     document.getElementById("link").innerHTML = "https://www.unegui.mn/avto-mashin/"+hom+"/"
+    //     document.getElementById("btn").style.display ="inline-block"
+    //     }
     function autoT() {
         ab = document.getElementById("autoT").value;
         document.getElementById("link").innerHTML = "https://www.unegui.mn/avto-mashin/"+ab+"/"
